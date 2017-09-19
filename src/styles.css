@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+body{font-family: 'Roboto', sans-serif;}
+.navbar-inverse{background-color:#F2184F;}
+.navbar-inverse .navbar-nav>li>a{color:#fff;}
+.app-title{margin:0 0 20px 0;padding:15px 10px;background-color:#002E5B;font-size:22px;color:#fff;font-weight:700;}
+.navbar{margin-bottom:0;}
+.navbar-inverse .navbar-brand{padding:16px 0;background-color:#fff;min-width:250px;text-align:center;font-size:24px;font-weight:bold;}
+.form-control{box-shadow:none;}
+
+@media (min-width: 768px){
+  .navbar-form {width:60%;}
+  .navbar-form .input-group{width:100%;}
+}

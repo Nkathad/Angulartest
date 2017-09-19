@@ -56,7 +56,6 @@ app.post('/update', function(req, res) {
     'firstName': req.body.firstName,
     'lastName': req.body.lastName,
     'username': req.body.username,
-    'email': req.body.email,
     'password': req.body.password,
   }
 
@@ -68,20 +67,7 @@ app.post('/update', function(req, res) {
     res.json({});
 })
 
-// app.get('/login',function(req, res){
-//   const user = {
-//     'username': req.body.username,
-//     'password': req.body.password
-//   }
-//
-//   // console.log("req: ", todo);
-//   r.table('todos').get(user).run(connection, function(err, result) {
-//     if (err) throw err;
-//     console.log(JSON.stringify(result, null, 2));
-//     })
-//     res.json({});
-//
-// })
+// login function
 
 app.post('/login',function(req, res){
   console.log('req.body', req.body)

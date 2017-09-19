@@ -6,12 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { routingComponent } from './app-routing.module'
 
+
+import { fakeBackendProvider } from './fake-backend';
+import { MockBackend, MockConnection } from '@angular/http/testing';
+import { BaseRequestOptions } from '@angular/http';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductfilterPipe } from './productfilter.pipe';
 import { SearchComponent } from './search/search.component';
-
+import { AlertComponent } from './alert/alert.component';
 
 
 @NgModule({
@@ -21,7 +26,9 @@ import { SearchComponent } from './search/search.component';
     NavbarComponent,
     routingComponent,
     ProductfilterPipe,
-    SearchComponent
+    SearchComponent,
+    AlertComponent
+
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,12 @@ import { SearchComponent } from './search/search.component';
     HttpModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    fakeBackendProvider,
+    MockBackend,
+    BaseRequestOptions
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

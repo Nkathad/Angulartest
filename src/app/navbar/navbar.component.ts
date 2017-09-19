@@ -10,7 +10,8 @@ export class NavbarComponent implements OnInit {
     {navItem:'Home', Url:'app-home'},
     {navItem:'About Us', Url:'app-aboutus'},
     {navItem:'Products', Url:'app-products'},
-    {navItem:'Contact Us', Url:'app-contactus'}
+    {navItem:'Contact Us', Url:'app-contactus'},
+    // {navItem:'Account info', Url:'app-accountinfo'}
   ]
   userNav = [
     {userItem:'Login', Url:'app-login', className:'glyphicon glyphicon-log-in'},
